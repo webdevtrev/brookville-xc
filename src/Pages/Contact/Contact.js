@@ -39,7 +39,7 @@ function Contact() {
           <div className="coach" key={coach.slug}>
             <h2 className="name">{coach.name}</h2>
             <h3 className="title">{coach.title}</h3>
-            <img src={urlFor(coach.image).width(200).url()} alt={"Picture of "+coach.name} />
+            <img src={urlFor(coach.image).width(400).height(400).url()} alt={"Picture of "+coach.name} />
           </div>
         )}
     </div>
