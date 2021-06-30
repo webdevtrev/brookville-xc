@@ -7,7 +7,8 @@ import Footer from './Components/Footer/Footer'
 //Import Pages
 import Home from './Pages/Home/Home'
 import Contact from './Pages/Contact/Contact'
-import Info from './Pages/Info/Info'
+import PracticeInfo from './Pages/practiceInfo/practiceInfo'
+import Faq from './Pages/FAQ/faq'
 
 import './App.css';
 
@@ -27,8 +28,11 @@ function App() {
                 <Route exact path="/contact">
                   <Contact />
                 </Route>
-                <Route exact path="/info">
-                  <Info />
+                <Route exact path="/practiceInfo">
+                  <PracticeInfo />
+                </Route>
+                <Route exact path="/faq">
+                  <Faq />
                 </Route>
               </Switch>
             </div>
