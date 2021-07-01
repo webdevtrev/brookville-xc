@@ -9,6 +9,7 @@ import Home from './Pages/Home/Home'
 import Contact from './Pages/Contact/Contact'
 import PracticeInfo from './Pages/practiceInfo/practiceInfo'
 import Faq from './Pages/FAQ/faq'
+import Licenses from './Pages/Licenses/licenses'
 
 import './App.css';
 
@@ -33,6 +34,9 @@ function App() {
                 </Route>
                 <Route exact path="/faq">
                   <Faq />
+                </Route>
+                <Route exact path="/licenses">
+                  <Licenses />
                 </Route>
               </Switch>
             </div>

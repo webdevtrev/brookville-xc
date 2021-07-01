@@ -8,6 +8,7 @@ function Footer() {
         <Link to='/practiceInfo'>practiceInfo</Link>
         <Link to='/faq'>FAQ</Link>
         <Link to='/contact'>Contact</Link>
+        <Link to='/licenses'>Licenses</Link>
     </div>
   );
 }

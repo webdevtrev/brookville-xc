@@ -1,0 +1,68 @@
+{
+    "@sanity/block-content-to-react@3.0.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/sanity-io/block-content-to-react",
+        "licenseUrl": "https://github.com/sanity-io/block-content-to-react/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
+    "@sanity/client@2.11.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/sanity-io/sanity",
+        "licenseUrl": "https://github.com/sanity-io/sanity/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
+    "@sanity/image-url@0.140.22": {
+        "licenses": "MIT",
+        "repository": "https://github.com/sanity-io/image-url",
+        "licenseUrl": "https://github.com/sanity-io/image-url/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
+    "@testing-library/jest-dom@5.14.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/testing-library/jest-dom",
+        "licenseUrl": "https://github.com/testing-library/jest-dom/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
+    "@testing-library/react@11.2.7": {
+        "licenses": "MIT",
+        "repository": "https://github.com/testing-library/react-testing-library",
+        "licenseUrl": "https://github.com/testing-library/react-testing-library/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
+    "@testing-library/user-event@12.8.3": {
+        "licenses": "MIT",
+        "repository": "https://github.com/testing-library/user-event",
+        "licenseUrl": "https://github.com/testing-library/user-event/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
+    "react-dom@17.0.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/facebook/react",
+        "licenseUrl": "https://github.com/facebook/react/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
+    "react-router-dom@5.2.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/ReactTraining/react-router",
+        "licenseUrl": "https://github.com/ReactTraining/react-router/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
+    "react-scripts@4.0.3": {
+        "licenses": "MIT",
+        "repository": "https://github.com/facebook/create-react-app",
+        "licenseUrl": "https://github.com/facebook/create-react-app/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
+    "react@17.0.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/facebook/react",
+        "licenseUrl": "https://github.com/facebook/react/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
+    "web-vitals@1.1.2": {
+        "licenses": "Apache-2.0",
+        "repository": "https://github.com/GoogleChrome/web-vitals",
+        "licenseUrl": "https://github.com/GoogleChrome/web-vitals/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    }
+}
