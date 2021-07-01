@@ -1,5 +1,6 @@
 import './licenses.css';
 import allData from './licenses.json'
+import {Helmet} from "react-helmet";
 
 function extractNameFromGithubUrl(url) {
     if (!url) {
@@ -45,6 +46,9 @@ function Licenses() {
     });
     return (
         <div className="Licenses">
+            <Helmet>
+                <title>Licenses</title>
+            </Helmet>
             {licenses.map(
                 (
                     {

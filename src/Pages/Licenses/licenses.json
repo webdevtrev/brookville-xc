@@ -53,6 +53,12 @@
         "licenseUrl": "https://github.com/facebook/create-react-app/raw/master/LICENSE",
         "parents": "brookvillexc-frontend"
     },
+    "react-spinners@0.11.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/davidhu2000/react-spinners",
+        "licenseUrl": "https://github.com/davidhu2000/react-spinners/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
     "react@17.0.2": {
         "licenses": "MIT",
         "repository": "https://github.com/facebook/react",

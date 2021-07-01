@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import sanityClient from '../../client';
 import imageUrlBuilder from "@sanity/image-url";
 import './Contact.css';
+import {Helmet} from "react-helmet";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -34,6 +35,9 @@ function Contact() {
 
   return (
     <div className="Contact">
+      <Helmet>
+        <title>Coaches</title>
+      </Helmet>
       <h1>Meet the coaches!</h1>
         {allPostsData&&allPostsData.map((coach)=>
           <div className="coach" key={coach.slug}>

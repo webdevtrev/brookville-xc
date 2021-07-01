@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './practiceInfo.css';
 import sanityClient from '../../client';
+import {Helmet} from "react-helmet";
 
 function PracticeInfo() {
 
@@ -63,6 +64,9 @@ function PracticeInfo() {
 
   return (
     <div className="practiceInfo">
+      <Helmet>
+        <title>Practice Info</title>
+      </Helmet>
       <h1>Practice Times</h1>
 
       <h2>High School</h2>
