@@ -19,7 +19,12 @@ function extractNameFromGithubUrl(url) {
 function Licenses() {
     let licenses = Object.keys(allData).map((key) => {
         let { licenses, ...license } = allData[key];
-        let [name, version] = key.split("@");
+        let name, version;
+        if (key[0] == '@') {
+            [, name, version] = key.split('@');
+        } else {
+            [name, version] = key.split('@');
+        }
 
         let username =
             extractNameFromGithubUrl(license.repository) ||
