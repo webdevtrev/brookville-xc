@@ -66,7 +66,7 @@ function Licenses() {
                     let title = name;
                     if (username) {
                         if (title.toLowerCase() != username.toLowerCase()) {
-                            title += ` by ${username}`;
+                            title += ` by ${username.charAt(0).toUpperCase()+username.substring(1)}`;
                         }
                     }
                     return (
@@ -81,9 +81,6 @@ function Licenses() {
                                     <a href={repository} className="item">
                                         <div>
                                             <div className="name">{title}</div>
-                                            <a className="text" href={licenseUrl}>
-                                                {licenses}
-                                            </a>
                                             <div className="text">{version}</div>
                                         </div>
                                     </a>

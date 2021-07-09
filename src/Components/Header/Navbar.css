@@ -1,0 +1,12 @@
+
+
+@media(min-width: 800px) {
+
+    .Navbar-Desktop {
+      height: 50px;
+      background-color: #4169e1;
+    }
+    .Navbar-Mobile{
+        display: none;
+    }
+  }
