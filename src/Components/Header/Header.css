@@ -98,7 +98,7 @@
     }
   } */
 
-  .buttons>*:not(.menu-button){
+  .buttons>*{
       display: none;
   }
   .shadow{
@@ -127,6 +127,7 @@
       align-items: center;
   }
   .menu-button{
+      display: inline-block;
       background-color: transparent;
       border: none;
       font-size: 25px;
@@ -140,7 +141,7 @@
       right: 0;
       top: 0;
       width: 300px;
-      height: 100vw;
+      height: 100vh;
       box-shadow: -10px 0px 10px black;
       background-color: rgb(209, 209, 209);
       transition: .5s;
@@ -162,28 +163,92 @@
       border: none;
   }
 
+
   @media(min-width: 800px) {
     .Header{
         height: 200px;
         background-image: url('../../assets/xcbanner.png');
         background-size: cover;
         background-position: center;
+        max-width: 1000px;
+        margin: auto;
+        align-items: center;
+        padding: 1em;
     }
     .Header > *{
         width: 200px;
+    }
+    .logo{
+        height: 150px;
+        width: 150px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
     }
     .logo img{
         width: 150px;
         height: auto;
 
     }
+    .title{
+        position: relative;
+        font-size: 40px;
+    }
+
+    .title h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #4169e1;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .shadow{
+        display: inline-block;
+        -webkit-text-stroke: 8px #ffffff;
+    }
     .buttons > *{
+        display: inline-block;
+    }
+    
+    .menu{
+        display: none;
+    }
+    .buttons>*{
         display: inline-block;
     }
     .menu-button{
         display: none;
     }
-    .menu{
-        display: none;
+    .buttons{
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        height: 50px;
+        width:250px;
     }
+    .buttons svg{
+        color: #4169e1;
+        background-color: white;
+        padding: 7px;
+        border-radius: 50%;
+        font-size: 25px;
+        transition: 1s;
+    }
+    .buttons svg:hover{
+        color: white;
+        background-color: #4169e1;
+        font-size: 35px;
+    }
+
+
+
+
+
+
+
   }

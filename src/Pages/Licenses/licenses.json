@@ -47,6 +47,12 @@
         "licenseUrl": "https://github.com/nfl/react-helmet/raw/master/LICENSE",
         "parents": "brookvillexc-frontend"
     },
+    "react-icons@4.2.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/react-icons/react-icons",
+        "licenseUrl": "https://github.com/react-icons/react-icons/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
     "react-router-dom@5.2.0": {
         "licenses": "MIT",
         "repository": "https://github.com/ReactTraining/react-router",
