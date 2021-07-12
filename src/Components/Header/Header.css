@@ -2,254 +2,162 @@
     font-family: "Big Shoulders Stencil Display";
     src: url("../../assets/BigShouldersStencilDisplay-Black.ttf");
   }
-/*.Header{
+
+.buttons>*{
+    display: none;
+}
+.shadow{
+    display: none;
+}
+.Header{
+    padding: .5em;
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    box-shadow: 0 5px 10px black;
+    background-color: #4169e1;
+}
+.Header > *{
+    width: 100px;
+}
+.logo img{
+    height: 75px;
+}
+.Header .title{
+    flex-grow: 4;
+    font-family: 'Big Shoulders Stencil Display';
+}
+.buttons{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-button{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    
+}
+.menu.closed{
+    right: -320px;
+}
+.menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    box-shadow: -10px 0px 10px black;
+    background-color:white;
+    transition: .5s;
+    padding: .5em;
+}
+.menu-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
-    height: 200px;
-    margin: auto;
-    padding: 10px 50px;
-    position: relative;
-
+}
+.menu-header h1{
+    margin: 0;
+}
+.menu-header .close{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+}
+.menu-footer svg{
+padding: 7px;
+border-radius: 50%;
+font-size: 25px;
+transition: 1s;
+color: white;
+background-color: #4169e1;
 }
 
-.logo{
+
+@media(min-width: 800px) {
+.Header{
     height: 150px;
-    width: 150px;
+    background-image: url('../../assets/xcbanner.png');
+    background-size: cover;
+    background-position: center;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+    padding: 1em;
+}
+.Header > *{
+    width: 200px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
     background-color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
 }
 .logo img{
-    max-height: 100%;
-    max-width: 100%;
-    width: 150px;
+    width: 100px;
+    height: auto;
+
 }
 .title{
-    width: auto;
-    height: 200px;
-    width: 100%;
-    font-size: 5vw;
-    font-family: 'Big Shoulders Stencil Display';
-
-    
+    position: relative;
+    font-size: 40px;
 }
 
 .title h1{
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #4169e1;
     margin: 0;
+    width: 100%;
+    text-align: center;
 }
+
 .shadow{
-    display: none;
+    display: inline-block;
     -webkit-text-stroke: 8px #ffffff;
 }
+.buttons > *{
+    display: inline-block;
+    margin-right: 5px;
+}
 
-.buttons svg{
-    color: #4169e1;
-    background-color: white;
-    padding: 7px;
-    border-radius: 50%;
-    font-size: 25px;
-    transition: 1s;
+.menu{
+    display: none;
+}
+.buttons>*{
+    display: inline-block;
+}
+.menu-button{
+    display: none;
 }
 .buttons{
-
-    display: none;
     justify-content: flex-end;
     align-items: center;
     text-align: right;
     height: 50px;
     width:250px;
 }
+.buttons svg{
+    color: #4169e1;
+    background-color: white;
+    padding: 7px;
+    border-radius: 50%;
+    font-size: 35px;
+    transition: 1s;
+}
 .buttons svg:hover{
     color: white;
     background-color: #4169e1;
-    font-size: 35px;
+    font-size: 45px;
 }
-
-@media(min-width: 1000px) {
-    .Navbar-Desktop {
-      height: 50px;
-      background-color: #4169e1;
-    }
-    .Header{
-        background-image: url('../../assets/xcbanner.png');
-        background-position: center;
-        background-size: cover;
-    }
-    .title{
-        font-size: 40px;
-    }
-    .title h1{
-        display: inline-block;
-        position: absolute;
-    }
-    .title .shadow{
-        display: inline-block;
-    }
-    .buttons{
-        display: flex;
-    }
-  } */
-
-  .buttons>*{
-      display: none;
-  }
-  .shadow{
-      display: none;
-  }
-  .Header{
-      padding: .5em;
-      display: flex;
-      justify-content: space-around;
-      height: 75px;
-      box-shadow: 0 5px 10px black;
-  }
-  .Header > *{
-      width: 100px;
-  }
-  .logo img{
-      height: 75px;
-  }
-  .title{
-      flex-grow: 4;
-      font-family: 'Big Shoulders Stencil Display';
-  }
-  .buttons{
-      width: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .menu-button{
-      display: inline-block;
-      background-color: transparent;
-      border: none;
-      font-size: 25px;
-      
-  }
-  .menu.closed{
-      right: -320px;
-  }
-  .menu{
-      position: fixed;
-      right: 0;
-      top: 0;
-      width: 300px;
-      height: 100vh;
-      box-shadow: -10px 0px 10px black;
-      background-color: rgb(209, 209, 209);
-      transition: .5s;
-  }
-  .menu-header{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: .5em;
-  }
-  .menu-header h1{
-      margin: 0;
-  }
-  .menu-header .close{
-      display: flex;
-      align-items: center;
-      font-size: 30px;
-      background-color: transparent;
-      border: none;
-  }
-
-
-  @media(min-width: 800px) {
-    .Header{
-        height: 200px;
-        background-image: url('../../assets/xcbanner.png');
-        background-size: cover;
-        background-position: center;
-        max-width: 1000px;
-        margin: auto;
-        align-items: center;
-        padding: 1em;
-    }
-    .Header > *{
-        width: 200px;
-    }
-    .logo{
-        height: 150px;
-        width: 150px;
-        background-color: white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-    }
-    .logo img{
-        width: 150px;
-        height: auto;
-
-    }
-    .title{
-        position: relative;
-        font-size: 40px;
-    }
-
-    .title h1{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #4169e1;
-        margin: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .shadow{
-        display: inline-block;
-        -webkit-text-stroke: 8px #ffffff;
-    }
-    .buttons > *{
-        display: inline-block;
-    }
-    
-    .menu{
-        display: none;
-    }
-    .buttons>*{
-        display: inline-block;
-    }
-    .menu-button{
-        display: none;
-    }
-    .buttons{
-        justify-content: flex-end;
-        align-items: center;
-        text-align: right;
-        height: 50px;
-        width:250px;
-    }
-    .buttons svg{
-        color: #4169e1;
-        background-color: white;
-        padding: 7px;
-        border-radius: 50%;
-        font-size: 25px;
-        transition: 1s;
-    }
-    .buttons svg:hover{
-        color: white;
-        background-color: #4169e1;
-        font-size: 35px;
-    }
-
-
-
-
-
-
-
-  }
+}

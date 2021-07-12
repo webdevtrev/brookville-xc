@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import sanityClient from '../../client';
 import imageUrlBuilder from "@sanity/image-url";
 
+import Navbar from './Navbar'
+
 import {FaStrava, FaTwitter, FaPhone} from 'react-icons/fa';
 import {MdEmail} from 'react-icons/md';
 import {GrMenu} from 'react-icons/gr';
@@ -70,11 +72,19 @@ function Header() {
         </h1>
         <button className="close" onClick={()=>{setMenuOpen(false)}}><VscChromeClose/></button>
       </div>
-      <div className="menu-body"></div>
-      <div className="menu-footer"></div>
+      <div className="menu-body">
+        
+      </div>
+      <div className="menu-footer">
+          {header?.phone && <a href={"tel:" + socials?.phone}><FaPhone/></a>}
+          {header?.email && <a href={"mailto:" + socials?.email}><MdEmail/></a>}
+          {header?.twitter && <a href={socials?.twitter}><FaTwitter/></a>}
+          {header?.strava && <a href={socials?.strava}><FaStrava/></a>}
+        
+      </div>
     </div>
     </div>
-
+    <Navbar />
     </>
   );
 }
