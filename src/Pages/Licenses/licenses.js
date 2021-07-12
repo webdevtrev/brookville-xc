@@ -20,7 +20,7 @@ function Licenses() {
     let licenses = Object.keys(allData).map((key) => {
         let { licenses, ...license } = allData[key];
         let name, version;
-        if (key[0] == '@') {
+        if (key[0] === '@') {
             [, name, version] = key.split('@');
         } else {
             [name, version] = key.split('@');
@@ -33,7 +33,7 @@ function Licenses() {
         let userUrl;
         let image;
         if (username) {
-            username = username;
+            // username = username;
             image = `http://github.com/${username}.png`;
             userUrl = `http://github.com/${username}`;
         }
@@ -70,7 +70,7 @@ function Licenses() {
                 ) => {
                     let title = name;
                     if (username) {
-                        if (title.toLowerCase() != username.toLowerCase()) {
+                        if (title.toLowerCase() !== username.toLowerCase()) {
                             title += ` by ${username.charAt(0).toUpperCase()+username.substring(1)}`;
                         }
                     }

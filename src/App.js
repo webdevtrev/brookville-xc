@@ -10,8 +10,10 @@ import Contact from './Pages/Contact/Contact'
 import PracticeInfo from './Pages/practiceInfo/practiceInfo'
 import Faq from './Pages/FAQ/faq'
 import Licenses from './Pages/Licenses/licenses'
+import Post from './Pages/Post/Post'
+import Results from './Pages/Results/Results'
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -37,6 +39,12 @@ function App() {
                 </Route>
                 <Route exact path="/licenses">
                   <Licenses />
+                </Route>
+                <Route path="/posts/:slug">
+                  <Post />
+                </Route>
+                <Route path="/results/:slug">
+                  <Results />
                 </Route>
               </Switch>
             </div>

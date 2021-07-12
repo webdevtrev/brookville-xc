@@ -19,6 +19,7 @@ ul{
   position: absolute;
   width: 100%;
   flex: 1;
+  z-index: 500;
   a{
       font-size: 16px;
   }
@@ -50,10 +51,11 @@ ul{
   }
 }
 
+
+}
 @media(max-width: 799px) {
 
     .Navbar-Desktop {
       display: none;
     }
   }
-}

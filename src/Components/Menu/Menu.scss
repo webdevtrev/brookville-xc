@@ -1,0 +1,81 @@
+.menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    box-shadow: -10px 0px 10px black;
+    background-color:white;
+    transition: .5s;
+    padding: .5em;
+
+    &.closed{
+        right: -320px;
+    }
+
+    &-header{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            margin: 0;
+        }
+        .close{
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            background-color: transparent;
+            border: none;
+        }
+    }
+    
+    &-body{
+        margin-top: 1em;
+        a,button{
+            text-decoration: none;
+            color: black;
+            background-color: lightgray;
+            border: none;
+            border-bottom: 4px solid black;
+            display: block;
+            text-align: left;
+            font-family: monospace;
+            font-size: 30px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul a{
+            background-color: white;
+        }
+        .ReactCollapse--collapse{
+            transition: .5s;
+        }
+    }
+    &-footer{
+        margin-top: 1em;
+        display: flex;
+        justify-content: space-around;
+
+        svg{
+            font-size: 50px;
+            padding: 7px;
+            border-radius: 50%;
+            transition: 1s;
+            color: white;
+            background-color: #4169e1;
+        }
+    }
+
+
+
+    
+
+}
