@@ -1,25 +1,7 @@
 import { Link } from "react-router-dom";
 import './Navbar.scss';
-import {useState, useEffect} from 'react';
-import sanityClient from '../../client';
 
-function Navbar() {
-
-    const [years, setYears] = useState(null);
-
-    useEffect(() => {
-        sanityClient
-            .fetch(
-                `*[_type == "results"]{
-              year
-        }`
-            )
-            .then((data) => {
-                setYears(data)
-            })
-            .catch(console.error);
-    }, []);
-
+function Navbar({years}) {
 
     return (
         <div className="Navbar-Desktop">
@@ -31,7 +13,7 @@ function Navbar() {
                     <button className="nav-item">Results</button>
                     <ul className="dropdown">
                         {years?.map((year)=>{
-                            return <li key={year.year}><Link className="nav-item" to={'/results/'+year.year} > {year.year} Results</Link></li>
+                            return <li key={year}><Link className="nav-item" to={'/results/'+year} > {year} Results</Link></li>
                         })}
                         
                     </ul>

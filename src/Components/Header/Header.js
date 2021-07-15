@@ -17,6 +17,7 @@ function Header() {
   const [header, setData] = useState(null);
   const [socials, setSocials] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [years, setYears] = useState(null);
 
   useEffect(() => {
     sanityClient
@@ -27,6 +28,7 @@ function Header() {
         setData(data[1])
       })
       .catch(console.error);
+
     sanityClient
       .fetch(
         `*[_type == "socialLinks"]`
@@ -35,10 +37,25 @@ function Header() {
         setSocials(data[0])
       })
       .catch(console.error);
+
+      sanityClient
+            .fetch(
+                `*[_type == "results"]{
+              year
+        }`
+            )
+            .then((data) => {
+                setYears(data.map((year)=>{
+                    return year.year;
+                }))
+            })
+            .catch(console.error);
   }, []);
 
+  years?.sort();
+
   return (
-    <>
+    <div className="Header-Wrapper">
       <div className="Header">
         <div className="logo">
           <img src={logo} alt={header?.title} />
@@ -63,13 +80,14 @@ function Header() {
           socials={socials}
           setMenuOpen = {setMenuOpen}
           menuOpen={menuOpen} 
+          years = {years}
         />
 
 
         
       </div>
-      <Navbar />
-    </>
+      <Navbar years = {years} />
+    </div>
   );
 }
 

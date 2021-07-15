@@ -35,6 +35,18 @@
         "licenseUrl": "https://github.com/testing-library/user-event/raw/master/LICENSE",
         "parents": "brookvillexc-frontend"
     },
+    "bootstrap@5.0.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/twbs/bootstrap",
+        "licenseUrl": "https://github.com/twbs/bootstrap/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
+    "react-collapse@5.1.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/nkbt/react-collapse",
+        "licenseUrl": "https://github.com/nkbt/react-collapse/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
     "react-dom@17.0.2": {
         "licenses": "MIT",
         "repository": "https://github.com/facebook/react",
@@ -75,6 +87,12 @@
         "licenses": "MIT",
         "repository": "https://github.com/facebook/react",
         "licenseUrl": "https://github.com/facebook/react/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
+    "reactstrap@8.9.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/reactstrap/reactstrap",
+        "licenseUrl": "https://github.com/reactstrap/reactstrap/raw/master/LICENSE",
         "parents": "brookvillexc-frontend"
     },
     "sass@1.35.2": {

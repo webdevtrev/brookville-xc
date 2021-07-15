@@ -1,8 +1,7 @@
 import './Menu.scss';
 import { Link } from "react-router-dom";
 import { Collapse } from 'react-collapse';
-import React, { useEffect, useState } from "react";
-import sanityClient from '../../client';
+import React, { useState } from "react";
 
 import { FaStrava, FaTwitter, FaPhone } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
@@ -10,7 +9,7 @@ import { VscChromeClose } from 'react-icons/vsc';
 
 
 
-function Menu({ header, socials, menuOpen, setMenuOpen }) {
+function Menu({ header, socials, menuOpen, setMenuOpen, years }) {
 
     const [isOpenResults, setIsOpenResults] = useState(false);
     const [isOpenInfo, setIsOpenInfo] = useState(false);
@@ -18,26 +17,10 @@ function Menu({ header, socials, menuOpen, setMenuOpen }) {
     const toggleResults = () => setIsOpenResults(!isOpenResults);
     const toggleInfo = () => setIsOpenInfo(!isOpenInfo);
 
-    const [years, setYears] = useState(null);
-
-    useEffect(() => {
-        sanityClient
-            .fetch(
-                `*[_type == "results"]{
-              year
-        }`
-            )
-            .then((data) => {
-                setYears(data)
-            })
-            .catch(console.error);
-
-
-    }, []);
-
-
     function handleClick() {
         setMenuOpen(false);
+        setIsOpenInfo(false);
+        setIsOpenResults(false);
     }
 
 
@@ -47,7 +30,7 @@ function Menu({ header, socials, menuOpen, setMenuOpen }) {
                 <h1>
                     Menu
                         </h1>
-                <button className="close" onClick={() => { handleClick() }}><VscChromeClose /></button>
+                <button className="close" onClick={handleClick}><VscChromeClose /></button>
             </div>
             <div className="menu-body">
                 <Link onClick={handleClick} to='/'>Home</Link>
@@ -55,26 +38,16 @@ function Menu({ header, socials, menuOpen, setMenuOpen }) {
                 <Collapse isOpened={isOpenResults}>
                     <ul>
                         {years?.map((year) => {
-                            return <li key={'menu-' + year.year}><Link onClick={() => {
-                                handleClick();
-                                toggleResults();
-                            }} 
-                            to={'/results/' + year.year} > {year.year} Results</Link></li>
+                            return <li key={'menu-' + year}><Link onClick={handleClick}to={'/results/' + year} > {year} Results</Link></li>
                         })}
                     </ul>
                 </Collapse>
                 <button onClick={toggleInfo}>Info</button>
                 <Collapse isOpened={isOpenInfo}>
                     <ul>
-                        <li><Link onClick={() => {
-                            handleClick();
-                            toggleInfo();
-                        }}
+                        <li><Link onClick={handleClick}
                             to='/practiceInfo'>Practice Info</Link></li>
-                        <li><Link onClick={() => {
-                            handleClick();
-                            toggleInfo();
-                        }}
+                        <li><Link onClick={handleClick}
                             to='/faq'>FAQ</Link></li>
                     </ul>
                 </Collapse>

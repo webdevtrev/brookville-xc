@@ -10,6 +10,9 @@
     display: none;
 }
 .Header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
     padding: .5em;
     display: flex;
     justify-content: space-around;
@@ -46,13 +49,14 @@
     font-size: 25px;
     
 }
-.menu-button svg{
-    color: white;
+.menu-button svg path{
+    stroke: white;
 }
 
 
 @media(min-width: 800px) {
 .Header{
+    
     height: 150px;
     background-image: url('../../assets/xcbanner.png');
     background-size: cover;
@@ -61,6 +65,7 @@
     margin: auto;
     align-items: center;
     padding: 1em;
+    position: relative;
 }
 .Header > *{
     width: 200px;

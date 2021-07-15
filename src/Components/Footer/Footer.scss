@@ -1,0 +1,49 @@
+.Footer {
+    padding: 2em;
+    max-width: 1000px;
+    width: 100vw;
+    margin: auto;
+    background-color: #4169e1;
+    display: flex;
+    justify-content: space-evenly;
+    >div{
+        width: 50%;
+    }
+    .philosophy{
+        // color: white;
+        *:not(ol){
+            background-color: white;
+            padding: .5em;
+            display: inline-block;
+
+        }
+        ol{
+            padding: 0;
+        }
+        li{
+            display: list-item;
+        }
+        h2{
+            margin: 0;
+        }
+    }
+    .links{
+
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+
+        a{
+            color: black;
+            background-color: white;
+            padding: .5em;
+            margin: 5px;
+            &:hover{
+                color: white;
+                background-color: black;
+            }
+        }
+    }
+    
+    
+}
