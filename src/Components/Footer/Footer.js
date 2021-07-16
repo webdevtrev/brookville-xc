@@ -39,7 +39,7 @@ function Footer() {
 
       <div class="philosophy">
         <h2>Program Philosophy:</h2>
-        <p>{footer.quote}</p>
+        <p>{footer?.quote}</p>
       </div>
       <div className="links">
         <Link to='/'>Home</Link>
