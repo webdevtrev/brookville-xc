@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/brookville-xc/static/css/main.f58f4158.chunk.css",
-    "main.js": "/brookville-xc/static/js/main.5683ecd3.chunk.js",
-    "main.js.map": "/brookville-xc/static/js/main.5683ecd3.chunk.js.map",
+    "main.js": "/brookville-xc/static/js/main.c74bd955.chunk.js",
+    "main.js.map": "/brookville-xc/static/js/main.c74bd955.chunk.js.map",
     "runtime-main.js": "/brookville-xc/static/js/runtime-main.0e5a8ca8.js",
     "runtime-main.js.map": "/brookville-xc/static/js/runtime-main.0e5a8ca8.js.map",
     "static/js/2.47a323d9.chunk.js": "/brookville-xc/static/js/2.47a323d9.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.0e5a8ca8.js",
     "static/js/2.47a323d9.chunk.js",
     "static/css/main.f58f4158.chunk.css",
-    "static/js/main.5683ecd3.chunk.js"
+    "static/js/main.c74bd955.chunk.js"
   ]
 }
