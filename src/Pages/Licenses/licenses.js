@@ -1,4 +1,4 @@
-import './licenses.css';
+import './licenses.scss';
 import allData from './licenses.json'
 import {Helmet} from "react-helmet";
 

@@ -4,4 +4,12 @@
 .Container{
     max-width: 1000px;
     margin: auto;
+    padding: 1em;
+    margin-top: 75px;
+}
+
+@media(min-width: 800px) {
+    .Container{
+        margin-top:0;
+    }
 }

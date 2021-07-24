@@ -1,0 +1,25 @@
+.faqs{
+    .question{
+        margin-bottom: 2em;
+    }
+    .answer{
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .faq{
+        margin-bottom: 5em;
+    }
+    .card{
+        max-width: 80%;
+    }
+}
+
+@media(min-width: 800px) {
+    .faqs{
+        .card{
+            max-width: 75%;
+        }
+    }
+}

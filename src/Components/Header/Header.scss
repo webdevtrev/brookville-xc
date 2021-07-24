@@ -11,6 +11,7 @@
 }
 .Header{
     position: fixed;
+    z-index: 100;
     top: 0;
     width: 100vw;
     padding: .5em;
@@ -55,86 +56,86 @@
 
 
 @media(min-width: 800px) {
-.Header{
-    
-    height: 150px;
-    background-image: url('../../assets/xcbanner.png');
-    background-size: cover;
-    background-position: center;
-    max-width: 1000px;
-    margin: auto;
-    align-items: center;
-    padding: 1em;
-    position: relative;
-}
-.Header > *{
-    width: 200px;
-}
-.logo{
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.logo img{
-    background-color: white;
-    border-radius: 50%;
-    width: 100px;
-    height: auto;
+    .Header{
+        
+        height: 150px;
+        background-image: url('../../assets/xcbanner.png');
+        background-size: cover;
+        background-position: center;
+        max-width: 1000px;
+        margin: auto;
+        align-items: center;
+        padding: 1em;
+        position: relative;
+    }
+    .Header > *{
+        width: 200px;
+    }
+    .logo{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img{
+        background-color: white;
+        border-radius: 50%;
+        width: 100px;
+        height: auto;
 
-}
-.title{
-    position: relative;
-    font-size: 40px;
-}
+    }
+    .title{
+        position: relative;
+        font-size: 40px;
+    }
 
-.title h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #4169e1;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-}
+    .title h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #4169e1;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
 
-.shadow{
-    display: inline-block;
-    -webkit-text-stroke: 8px #ffffff;
-}
-.buttons > *{
-    display: inline-block;
-    margin-right: 5px;
-}
+    .shadow{
+        display: inline-block;
+        -webkit-text-stroke: 8px #ffffff;
+    }
+    .buttons > *{
+        display: inline-block;
+        margin-right: 5px;
+    }
 
-.menu{
-    display: none;
-}
-.buttons>*{
-    display: inline-block;
-}
-.menu-button{
-    display: none;
-}
+    .menu{
+        display: none;
+    }
+    .buttons>*{
+        display: inline-block;
+    }
+    .menu-button{
+        display: none;
+    }
 
-.buttons{
-    justify-content: flex-end;
-    align-items: center;
-    text-align: right;
-    height: 50px;
-}
-.buttons svg{
-    color: #4169e1;
-    background-color: white;
-    padding: 7px;
-    border-radius: 50%;
-    font-size: 35px;
-    transition: 1s;
-}
-.buttons svg:hover{
-    color: white;
-    background-color: #4169e1;
-    font-size: 45px;
-}
+    .buttons{
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        height: 50px;
+    }
+    .buttons svg{
+        color: #4169e1;
+        background-color: white;
+        padding: 7px;
+        border-radius: 50%;
+        font-size: 35px;
+        transition: 1s;
+    }
+    .buttons svg:hover{
+        color: white;
+        background-color: #4169e1;
+        font-size: 45px;
+    }
 }
