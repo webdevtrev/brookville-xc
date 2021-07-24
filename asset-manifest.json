@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/brookville-xc/static/css/main.f58f4158.chunk.css",
-    "main.js": "/brookville-xc/static/js/main.c74bd955.chunk.js",
-    "main.js.map": "/brookville-xc/static/js/main.c74bd955.chunk.js.map",
-    "runtime-main.js": "/brookville-xc/static/js/runtime-main.0e5a8ca8.js",
-    "runtime-main.js.map": "/brookville-xc/static/js/runtime-main.0e5a8ca8.js.map",
-    "static/js/2.47a323d9.chunk.js": "/brookville-xc/static/js/2.47a323d9.chunk.js",
-    "static/js/2.47a323d9.chunk.js.map": "/brookville-xc/static/js/2.47a323d9.chunk.js.map",
-    "static/js/3.a313c780.chunk.js": "/brookville-xc/static/js/3.a313c780.chunk.js",
-    "static/js/3.a313c780.chunk.js.map": "/brookville-xc/static/js/3.a313c780.chunk.js.map",
+    "main.css": "/brookville-xc/static/css/main.6623f934.chunk.css",
+    "main.js": "/brookville-xc/static/js/main.78ee9d05.chunk.js",
+    "main.js.map": "/brookville-xc/static/js/main.78ee9d05.chunk.js.map",
+    "runtime-main.js": "/brookville-xc/static/js/runtime-main.57040113.js",
+    "runtime-main.js.map": "/brookville-xc/static/js/runtime-main.57040113.js.map",
+    "static/css/2.7434d26a.chunk.css": "/brookville-xc/static/css/2.7434d26a.chunk.css",
+    "static/js/2.18285a1e.chunk.js": "/brookville-xc/static/js/2.18285a1e.chunk.js",
+    "static/js/2.18285a1e.chunk.js.map": "/brookville-xc/static/js/2.18285a1e.chunk.js.map",
+    "static/js/3.289829f9.chunk.js": "/brookville-xc/static/js/3.289829f9.chunk.js",
+    "static/js/3.289829f9.chunk.js.map": "/brookville-xc/static/js/3.289829f9.chunk.js.map",
     "index.html": "/brookville-xc/index.html",
-    "static/css/main.f58f4158.chunk.css.map": "/brookville-xc/static/css/main.f58f4158.chunk.css.map",
-    "static/js/2.47a323d9.chunk.js.LICENSE.txt": "/brookville-xc/static/js/2.47a323d9.chunk.js.LICENSE.txt",
+    "static/css/2.7434d26a.chunk.css.map": "/brookville-xc/static/css/2.7434d26a.chunk.css.map",
+    "static/css/main.6623f934.chunk.css.map": "/brookville-xc/static/css/main.6623f934.chunk.css.map",
+    "static/js/2.18285a1e.chunk.js.LICENSE.txt": "/brookville-xc/static/js/2.18285a1e.chunk.js.LICENSE.txt",
     "static/media/Header.scss": "/brookville-xc/static/media/xcbanner.75eee007.png",
     "static/media/devil_head.16e9fda6.png": "/brookville-xc/static/media/devil_head.16e9fda6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0e5a8ca8.js",
-    "static/js/2.47a323d9.chunk.js",
-    "static/css/main.f58f4158.chunk.css",
-    "static/js/main.c74bd955.chunk.js"
+    "static/js/runtime-main.57040113.js",
+    "static/css/2.7434d26a.chunk.css",
+    "static/js/2.18285a1e.chunk.js",
+    "static/css/main.6623f934.chunk.css",
+    "static/js/main.78ee9d05.chunk.js"
   ]
 }
