@@ -23,12 +23,13 @@ function Faq() {
     }, []);
 
     
-    console.log(faqs[0].answer)
+    // console.log(faqs[0].answer)
     return (
         <div className="faqs">
             <Helmet>
                 <title>FAQ</title>
             </Helmet>
+            <h2>Frequently Asked Questions!</h2>
             {faqs?.map((faq) => {
                 return (
                     <div className="faq">
