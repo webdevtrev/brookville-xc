@@ -31,13 +31,11 @@ function Footer() {
       .catch(console.error);
   }, []);
 
-  console.log(footer)
-  console.log(socials)
   return (
     <div className="Footer">
     <div className="Top">
 
-      <div class="philosophy">
+      <div className="philosophy">
         <h2>Program Philosophy:</h2>
         <p>{footer?.quote}</p>
       </div>

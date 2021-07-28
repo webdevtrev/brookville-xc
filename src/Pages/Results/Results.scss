@@ -1,0 +1,20 @@
+.results{
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+    &-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+
+    .link{
+        display: inline-block;
+        width: auto;
+        color: white;
+        background-color: #4169e1;
+        padding: 1em; margin: 1em;
+    }
+}
