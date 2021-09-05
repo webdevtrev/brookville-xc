@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/brookville-xc/static/css/main.7995ecc4.chunk.css",
-    "main.js": "/brookville-xc/static/js/main.aa1e4438.chunk.js",
-    "main.js.map": "/brookville-xc/static/js/main.aa1e4438.chunk.js.map",
+    "main.css": "/brookville-xc/static/css/main.f1480956.chunk.css",
+    "main.js": "/brookville-xc/static/js/main.6eadcdcf.chunk.js",
+    "main.js.map": "/brookville-xc/static/js/main.6eadcdcf.chunk.js.map",
     "runtime-main.js": "/brookville-xc/static/js/runtime-main.3ad85c04.js",
     "runtime-main.js.map": "/brookville-xc/static/js/runtime-main.3ad85c04.js.map",
     "static/css/2.7434d26a.chunk.css": "/brookville-xc/static/css/2.7434d26a.chunk.css",
-    "static/js/2.eb219b90.chunk.js": "/brookville-xc/static/js/2.eb219b90.chunk.js",
-    "static/js/2.eb219b90.chunk.js.map": "/brookville-xc/static/js/2.eb219b90.chunk.js.map",
+    "static/js/2.0852fff2.chunk.js": "/brookville-xc/static/js/2.0852fff2.chunk.js",
+    "static/js/2.0852fff2.chunk.js.map": "/brookville-xc/static/js/2.0852fff2.chunk.js.map",
     "static/js/3.add51b91.chunk.js": "/brookville-xc/static/js/3.add51b91.chunk.js",
     "static/js/3.add51b91.chunk.js.map": "/brookville-xc/static/js/3.add51b91.chunk.js.map",
     "index.html": "/brookville-xc/index.html",
     "static/css/2.7434d26a.chunk.css.map": "/brookville-xc/static/css/2.7434d26a.chunk.css.map",
-    "static/css/main.7995ecc4.chunk.css.map": "/brookville-xc/static/css/main.7995ecc4.chunk.css.map",
-    "static/js/2.eb219b90.chunk.js.LICENSE.txt": "/brookville-xc/static/js/2.eb219b90.chunk.js.LICENSE.txt",
+    "static/css/main.f1480956.chunk.css.map": "/brookville-xc/static/css/main.f1480956.chunk.css.map",
+    "static/js/2.0852fff2.chunk.js.LICENSE.txt": "/brookville-xc/static/js/2.0852fff2.chunk.js.LICENSE.txt",
     "static/media/Header.scss": "/brookville-xc/static/media/xcbanner.75eee007.png",
+    "static/media/App.scss": "/brookville-xc/static/media/Comfortaa-VariableFont_wght.a7679a7b.ttf",
+    "static/media/Menu.scss": "/brookville-xc/static/media/Staatliches-Regular.a7f803c1.ttf",
     "static/media/devil_head.16e9fda6.png": "/brookville-xc/static/media/devil_head.16e9fda6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3ad85c04.js",
     "static/css/2.7434d26a.chunk.css",
-    "static/js/2.eb219b90.chunk.js",
-    "static/css/main.7995ecc4.chunk.css",
-    "static/js/main.aa1e4438.chunk.js"
+    "static/js/2.0852fff2.chunk.js",
+    "static/css/main.f1480956.chunk.css",
+    "static/js/main.6eadcdcf.chunk.js"
   ]
 }
