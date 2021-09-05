@@ -1,11 +1,12 @@
 .Footer{
     width: 100vw;
+    
     .Top {
         padding: 2em;
         max-width: 1000px;
+        border-top: 3px dashed black;
         width: 100vw;
         margin: auto;
-        background-color: #4169e1;
         display: flex;
         justify-content: space-evenly;
         >div{
@@ -31,15 +32,16 @@
         }
         .links{
 
-            width: 100px;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+            height: auto;
 
             a{
                 color: black;
                 background-color: white;
                 padding: .5em;
                 margin: 5px;
+                display: inline-block;
                 &:hover{
                     color: white;
                     background-color: black;
@@ -50,15 +52,14 @@
         
     }
     .Bottom{
-        background-color: grey;
         max-width: 1000px;
         margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        a, .copyright{
-            color: white;
+        a{
+            color: black;
         }
     }
 }

@@ -1,7 +1,7 @@
- @font-face {
-    font-family: "Big Shoulders Stencil Display";
+@font-face {
+    font-family: "Big Shoulders Stencil Bold";
     src: url("../../assets/BigShouldersStencilDisplay-Black.ttf");
-  }
+}
 
 .buttons>*{
     display: none;
@@ -29,11 +29,13 @@
     height: 60px;
 }
 .Header .title{
-    color: white;
     flex-grow: 4;
-    font-family: 'Big Shoulders Stencil Display';
     margin: 0;
     h1{
+        color: white;
+        
+        font-family: 'Big Shoulders Stencil Bold';
+        
         margin: 0;
     }
 }
@@ -67,75 +69,79 @@
         align-items: center;
         padding: 1em;
         position: relative;
-    }
-    .Header > *{
-        width: 200px;
-    }
-    .logo{
-        height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .logo img{
-        background-color: white;
-        border-radius: 50%;
-        width: 100px;
-        height: auto;
+
+        & > *{
+            width: 200px;
+        }
+
+        .logo{
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo img{
+            background-color: white;
+            border-radius: 50%;
+            width: 100px;
+            height: auto;
+    
+        }
+        .title{
+            position: relative;
+            font-size: 40px;
+        }
+    
+        .title h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #4169e1;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+    
+        .shadow{
+            display: inline-block;
+            -webkit-text-stroke: 8px #ffffff;
+        }
+        .buttons > *{
+            display: inline-block;
+            margin-right: 5px;
+        }
+    
+        .menu{
+            display: none;
+        }
+        .buttons>*{
+            display: inline-block;
+        }
+        .menu-button{
+            display: none;
+        }
+    
+        .buttons{
+            justify-content: flex-end;
+            align-items: center;
+            text-align: right;
+            height: 50px;
+        }
+        .buttons svg{
+            color: #4169e1;
+            background-color: white;
+            padding: 7px;
+            border-radius: 50%;
+            font-size: 35px;
+            transition: 1s;
+        }
+        .buttons svg:hover{
+            color: white;
+            background-color: #4169e1;
+            font-size: 45px;
+        }
 
     }
-    .title{
-        position: relative;
-        font-size: 40px;
-    }
-
-    .title h1{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #4169e1;
-        margin: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .shadow{
-        display: inline-block;
-        -webkit-text-stroke: 8px #ffffff;
-    }
-    .buttons > *{
-        display: inline-block;
-        margin-right: 5px;
-    }
-
-    .menu{
-        display: none;
-    }
-    .buttons>*{
-        display: inline-block;
-    }
-    .menu-button{
-        display: none;
-    }
-
-    .buttons{
-        justify-content: flex-end;
-        align-items: center;
-        text-align: right;
-        height: 50px;
-    }
-    .buttons svg{
-        color: #4169e1;
-        background-color: white;
-        padding: 7px;
-        border-radius: 50%;
-        font-size: 35px;
-        transition: 1s;
-    }
-    .buttons svg:hover{
-        color: white;
-        background-color: #4169e1;
-        font-size: 45px;
-    }
+    
 }

@@ -1,0 +1,34 @@
+.Contact{
+    h1{
+        text-align: center;
+    }
+    .coach{
+        display: flex;
+        flex-direction: column;
+        
+        .title{
+            font-style: italic;
+            margin-left: .5rem;
+            font-size: 16px;
+        }
+    }
+    .image-container{
+        padding: 1em;
+    }
+    .image{
+        width: 100%;
+    }
+}
+@media(min-width: 800px) {
+    .Contact{
+        .coach{
+            flex-direction: row;
+            &.odd{
+                flex-direction: row-reverse;
+            }
+            >div{
+                width: 50%;
+            }
+        }
+    }
+}

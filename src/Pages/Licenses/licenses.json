@@ -1,4 +1,10 @@
 {
+    "@sanity/asset-utils@1.1.5": {
+        "licenses": "MIT",
+        "repository": "https://github.com/sanity-io/asset-utils",
+        "licenseUrl": "https://github.com/sanity-io/asset-utils/raw/master/LICENSE",
+        "parents": "brookvillexc-frontend"
+    },
     "@sanity/block-content-to-react@3.0.0": {
         "licenses": "MIT",
         "repository": "https://github.com/sanity-io/block-content-to-react",

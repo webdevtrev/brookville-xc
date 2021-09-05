@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'Staatliches';
+    src: url("../../assets/Staatliches-Regular.ttf");
+}
+
 .menu{
+    font-family: 'Staatliches', cursive;
     position: fixed;
     right: 0;
     top: 0;
@@ -8,6 +14,7 @@
     background-color:white;
     transition: .5s;
     padding: .5em;
+    overflow-y: scroll;
 
     &.closed{
         right: -320px;
@@ -34,6 +41,7 @@
     &-body{
         margin-top: 1em;
         a,button{
+            font-family: 'Staatliches', cursive;
             text-decoration: none;
             color: black;
             background-color: lightgray;
@@ -41,11 +49,11 @@
             border-bottom: 4px solid black;
             display: block;
             text-align: left;
-            font-family: monospace;
             font-size: 30px;
             width: 100%;
             margin: 0;
             padding: 0;
+            padding-left: .5em;
         }
         ul{
             list-style: none;

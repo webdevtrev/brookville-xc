@@ -1,0 +1,52 @@
+.Home{
+    .posts{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .post{
+        padding: .5em;
+        &-details{
+            margin-bottom: 1em;
+        }
+        
+
+        &-link{
+            padding: .25em;
+            border: 2px solid black;
+            color: black;
+            transition: .5s;
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+    img{
+        width: 80%;
+    }
+    .show-button{
+        display: flex;
+        justify-content: center;
+        button{
+            background-color: transparent;
+            border: 2px solid black;
+            padding: .5em;
+            cursor: pointer;
+            transition: .5s;
+            &:focus{
+                outline: none;
+            }
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+@media(min-width: 800px) {
+    .Home{
+        .post{width: 33%;}
+    }
+}

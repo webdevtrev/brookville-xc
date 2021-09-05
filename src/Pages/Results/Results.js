@@ -27,6 +27,7 @@ export default function OnePost() {
     return new Date(b.date) - new Date(a.date);
   });
 
+
   if (!results) return <div>Loading...</div>;
 
   return (
@@ -36,12 +37,14 @@ export default function OnePost() {
       
         {meetArray?.map((meet)=>{
           
+          let month = meet.date.split('-')[1];
+          let day = meet.date.split('-')[2];
           
             
           let link = meet.file!==undefined?`${fileUrl(meet.file?.asset?._ref)}`:meet.url;
           return(
             <div className="meet">
-              <a className="link" href={link} target="_blank" rel="noreferrer">{meet.date} {meet.meet}</a>
+              <a className="link" href={link} target="_blank" rel="noreferrer">{month}/{day} {meet.meet}</a>
             </div>
           )
         })}

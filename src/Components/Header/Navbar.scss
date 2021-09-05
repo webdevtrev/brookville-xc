@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'Staatliches';
+  src: url("../../assets/Staatliches-Regular.ttf");
+}
+
 .Navbar-Desktop{
+  font-family: 'Staatliches', cursive;
   max-width: 1000px;
   margin: auto;
 .header-nav-list{
@@ -25,6 +31,7 @@ ul{
   }
 }
 .nav-item{
+  font-family: 'Staatliches', cursive;
   display: inline-block;
   background-color:  #2a5bc4;
   border: none;
