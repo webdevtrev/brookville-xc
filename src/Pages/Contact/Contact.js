@@ -22,6 +22,8 @@ function Contact() {
           title,
           team,
           slug,
+          phone,
+          email,
           image{
             asset->{
             _id,
@@ -48,6 +50,7 @@ function Contact() {
         return -1
       }
     });
+    console.log(sortedData);
   }
 
 
@@ -60,13 +63,15 @@ function Contact() {
       {sortedData && sortedData.map((coach, index) =>
         <div className={`coach ${index % 2 ? 'even' : 'odd'}`} key={coach.slug}>
           <div className="info">
-            <h2 className="name">{coach.name}<span className="title">{`(${coach.team.toUpperCase()} ${coach.title})`}</span></h2>
+            <h2 className="name">{coach.name}<span className="coach-title">{`(${coach.team.toUpperCase()} ${coach.title})`}</span></h2>
             
             <BlockContent
               blocks={coach.bio}
               projectId={sanityClient.projectId}
               dataset={sanityClient.dataset}
             />
+            {coach.phone && <div className="coach-phone">Phone: {coach.phone}</div>}
+            {coach.email && <div className="coach-email">Email: {coach.email}</div>}
           </div>
           <div className="image-container">
             <img className="image" src={urlFor(coach.image).width(400).height(400).url()} alt={"Picture of " + coach.name} />

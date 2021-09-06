@@ -41,9 +41,10 @@ function Footer() {
       </div>
       <div className="links">
         <Link to='/'>Home</Link>
-        <Link to='/practiceInfo'>practiceInfo</Link>
+        <Link to={`/results/${new Date().getFullYear()}`}>{new Date().getFullYear()} Results</Link>
+        <Link to='/practiceInfo'>Practice Times</Link>
         <Link to='/faq'>FAQ</Link>
-        <Link to='/contact'>Contact</Link>
+        <Link to='/contact'>Coaches</Link>
       </div>
       
     </div>

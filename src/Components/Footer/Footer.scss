@@ -2,16 +2,14 @@
     width: 100vw;
     
     .Top {
-        padding: 2em;
+        padding: 1em;
         max-width: 1000px;
         border-top: 3px dashed black;
         width: 100vw;
         margin: auto;
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
-        >div{
-            width: 50%;
-        }
         .philosophy{
             // color: white;
             *:not(ol){
@@ -33,8 +31,8 @@
         .links{
 
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            height: auto;
 
             a{
                 color: black;
@@ -52,14 +50,27 @@
         
     }
     .Bottom{
+        padding: 1em;
         max-width: 1000px;
         margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         a{
             color: black;
+        }
+    }
+}
+@media(min-width: 800px) {
+    .Footer{
+        .Top{
+            flex-direction: row;
+            align-items: flex-start;
+            > div{
+                width: 50%;
+            }
         }
     }
 }

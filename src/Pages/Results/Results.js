@@ -32,7 +32,7 @@ export default function OnePost() {
 
   return (
     <div className="results">
-    <h1>{slug}</h1>
+    <h1>{slug} Results</h1>
     <div className="results-wrapper">
       
         {meetArray?.map((meet)=>{

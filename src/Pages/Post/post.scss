@@ -1,0 +1,17 @@
+.Post{
+    .details{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+        img{
+            border-radius: 50%;
+        }
+    }
+    .author{
+        display: inline-block;
+        margin-left: 1em;
+    }
+    .image{
+        width: 100%;
+    }
+}

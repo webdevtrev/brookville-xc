@@ -30,9 +30,10 @@
         display: flex;
         justify-content: center;
         button{
+            font-size: 16px;
             background-color: transparent;
             border: 2px solid black;
-            padding: .5em;
+            padding: .25em;
             cursor: pointer;
             transition: .5s;
             &:focus{

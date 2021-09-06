@@ -1,5 +1,6 @@
 import './Header.scss';
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import sanityClient from '../../client';
 
 import Navbar from './Navbar';
@@ -58,7 +59,8 @@ function Header() {
     <div className="Header-Wrapper">
       <div className="Header">
         <div className="logo">
-          <img src={logo} alt={header?.title} />
+        <Link to='/'><img src={logo} alt={header?.title} /></Link>
+          
         </div>
         <div className="title">
           <h1 className="shadow">{header?.title}</h1>
