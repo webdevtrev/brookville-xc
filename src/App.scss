@@ -5,7 +5,13 @@
 *{
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
+
 }
+
+.App {
+    overflow: hidden;
+}
+
 .Container{
     max-width: 1000px;
     width: 100%;
