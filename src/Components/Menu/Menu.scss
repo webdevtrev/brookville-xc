@@ -13,7 +13,6 @@
     box-shadow: -10px 0px 10px black;
     background-color:white;
     transition: .5s;
-    padding: .5em;
     overflow-y: scroll;
 
     &.closed{
@@ -25,6 +24,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: .5em;
 
         h1{
             margin: 0;
