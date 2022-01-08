@@ -2,20 +2,26 @@
   font-family: 'Comfortaa';
   src: url('./assets/Comfortaa-VariableFont_wght.ttf');
 }
-* {
-  box-sizing: border-box;
-  font-family: 'Comfortaa', cursive;
-}
-.Container {
-  max-width: 1000px;
-  width: 100%;
-  margin: auto;
-  padding: 1em;
-  margin-top: 75px;
+*{
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+
 }
 
-@media (min-width: 800px) {
-  .Container {
-    margin-top: 0;
-  }
+.App {
+    overflow: hidden;
+}
+
+.Container{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    padding: 1em;
+    margin-top: 75px;
+}
+
+@media(min-width: 800px) {
+    .Container{
+        margin-top:0;
+    }
 }
