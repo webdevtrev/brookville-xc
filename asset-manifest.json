@@ -1,29 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.29523915.chunk.css",
-    "main.js": "/static/js/main.2852788b.chunk.js",
-    "main.js.map": "/static/js/main.2852788b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8ffec2d3.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8ffec2d3.js.map",
-    "static/css/2.7434d26a.chunk.css": "/static/css/2.7434d26a.chunk.css",
-    "static/js/2.0852fff2.chunk.js": "/static/js/2.0852fff2.chunk.js",
-    "static/js/2.0852fff2.chunk.js.map": "/static/js/2.0852fff2.chunk.js.map",
-    "static/js/3.add51b91.chunk.js": "/static/js/3.add51b91.chunk.js",
-    "static/js/3.add51b91.chunk.js.map": "/static/js/3.add51b91.chunk.js.map",
+    "main.css": "/static/css/main.a9051f7d.chunk.css",
+    "main.js": "/static/js/main.63270581.chunk.js",
+    "main.js.map": "/static/js/main.63270581.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4bb441c2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4bb441c2.js.map",
+    "static/js/2.3e7f8b30.chunk.js": "/static/js/2.3e7f8b30.chunk.js",
+    "static/js/2.3e7f8b30.chunk.js.map": "/static/js/2.3e7f8b30.chunk.js.map",
+    "static/js/3.8072a29d.chunk.js": "/static/js/3.8072a29d.chunk.js",
+    "static/js/3.8072a29d.chunk.js.map": "/static/js/3.8072a29d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.7434d26a.chunk.css.map": "/static/css/2.7434d26a.chunk.css.map",
-    "static/css/main.29523915.chunk.css.map": "/static/css/main.29523915.chunk.css.map",
-    "static/js/2.0852fff2.chunk.js.LICENSE.txt": "/static/js/2.0852fff2.chunk.js.LICENSE.txt",
+    "static/css/main.a9051f7d.chunk.css.map": "/static/css/main.a9051f7d.chunk.css.map",
+    "static/js/2.3e7f8b30.chunk.js.LICENSE.txt": "/static/js/2.3e7f8b30.chunk.js.LICENSE.txt",
     "static/media/Header.scss": "/static/media/xcbanner.75eee007.png",
     "static/media/App.scss": "/static/media/Comfortaa-VariableFont_wght.a7679a7b.ttf",
     "static/media/Menu.scss": "/static/media/Staatliches-Regular.a7f803c1.ttf",
     "static/media/devil_head.16e9fda6.png": "/static/media/devil_head.16e9fda6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ffec2d3.js",
-    "static/css/2.7434d26a.chunk.css",
-    "static/js/2.0852fff2.chunk.js",
-    "static/css/main.29523915.chunk.css",
-    "static/js/main.2852788b.chunk.js"
+    "static/js/runtime-main.4bb441c2.js",
+    "static/js/2.3e7f8b30.chunk.js",
+    "static/css/main.a9051f7d.chunk.css",
+    "static/js/main.63270581.chunk.js"
   ]
 }
