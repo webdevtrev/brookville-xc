@@ -1,0 +1,22 @@
+.card {
+  padding: 20px;
+  position: relative;
+  display: inline-block;
+  border: 2px solid black;
+  display: inline-flex;
+  gap: 1em;
+  p:first-of-type {
+    margin-top: 0;
+  }
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.speech {
+  position: absolute;
+  bottom: -20px;
+  border-style: solid;
+  display: block;
+  width: 0;
+}
