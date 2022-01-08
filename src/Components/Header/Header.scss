@@ -1,147 +1,141 @@
 @font-face {
-    font-family: "Big Shoulders Stencil Bold";
-    src: url("../../assets/BigShouldersStencilDisplay-Black.ttf");
+  font-family: 'Big Shoulders Stencil Bold';
+  src: url('../../assets/BigShouldersStencilDisplay-Black.ttf');
 }
 
-.buttons>*{
-    display: none;
+.buttons > * {
+  display: none;
 }
-.shadow{
-    display: none;
+.shadow {
+  display: none;
 }
-.Header{
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    width: 100vw;
-    padding: .5em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 75px;
-    box-shadow: 0 5px 10px black;
-    background-color: #4169e1;
+.Header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100vw;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  box-shadow: 0 5px 10px black;
+  background-color: #4169e1;
 }
-.Header > *{
-    width: 100px;
+.Header > * {
+  width: 100px;
 }
-.logo img{
-    height: 60px;
+.logo img {
+  height: 60px;
 }
-.Header .title{
-    flex-grow: 4;
+.Header .title {
+  flex-grow: 4;
+  margin: 0;
+  h1 {
+    color: white;
+
+    font-family: 'Big Shoulders Stencil Bold';
+
     margin: 0;
-    h1{
-        color: white;
-        
-        font-family: 'Big Shoulders Stencil Bold';
-        
-        margin: 0;
-    }
+  }
 }
-.buttons{
-    width: 50px;
-    display: flex;
-    justify-content: center;
+.buttons {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+}
+.menu-button svg path {
+  stroke: white;
+}
+
+@media (min-width: 800px) {
+  .Header {
+    height: 150px;
+    background-image: url('../../assets/xcbanner.png');
+    background-size: cover;
+    background-position: center;
+    max-width: 1000px;
+    margin: auto;
     align-items: center;
-}
-.menu-button{
-    display: inline-block;
-    background-color: transparent;
-    border: none;
-    font-size: 25px;
-    
-}
-.menu-button svg path{
-    stroke: white;
-}
+    padding: 1em;
+    position: relative;
 
-
-@media(min-width: 800px) {
-    .Header{
-        
-        height: 150px;
-        background-image: url('../../assets/xcbanner.png');
-        background-size: cover;
-        background-position: center;
-        max-width: 1000px;
-        margin: auto;
-        align-items: center;
-        padding: 1em;
-        position: relative;
-
-        & > *{
-            width: 200px;
-        }
-
-        .logo{
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .logo img{
-            background-color: white;
-            border-radius: 50%;
-            width: 100px;
-            height: auto;
-    
-        }
-        .title{
-            position: relative;
-            font-size: 40px;
-        }
-    
-        .title h1{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #4169e1;
-            margin: 0;
-            width: 100%;
-            text-align: center;
-        }
-    
-        .shadow{
-            display: inline-block;
-            -webkit-text-stroke: 8px #ffffff;
-        }
-        .buttons > *{
-            display: inline-block;
-            margin-right: 5px;
-        }
-    
-        .menu{
-            display: none;
-        }
-        .buttons>*{
-            display: inline-block;
-        }
-        .menu-button{
-            display: none;
-        }
-    
-        .buttons{
-            justify-content: flex-end;
-            align-items: center;
-            text-align: right;
-            height: 50px;
-        }
-        .buttons svg{
-            color: #4169e1;
-            background-color: white;
-            padding: 7px;
-            border-radius: 50%;
-            font-size: 35px;
-            transition: .5s;
-        }
-        .buttons svg:hover{
-            color: white;
-            background-color: #4169e1;
-            font-size: 45px;
-        }
-
+    & > * {
+      width: 200px;
     }
-    
+
+    .logo {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo img {
+      background-color: white;
+      border-radius: 50%;
+      width: 100px;
+      height: auto;
+    }
+    .title {
+      position: relative;
+      font-size: 40px;
+    }
+
+    .title h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #4169e1;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .shadow {
+      display: inline-block;
+      -webkit-text-stroke: 8px #ffffff;
+    }
+    .buttons > * {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    .menu {
+      display: none;
+    }
+    .buttons > * {
+      display: inline-block;
+    }
+    .menu-button {
+      display: none;
+    }
+
+    .buttons {
+      justify-content: flex-end;
+      align-items: center;
+      text-align: right;
+      height: 50px;
+    }
+    .buttons svg {
+      color: #4169e1;
+      background-color: white;
+      padding: 7px;
+      border-radius: 50%;
+      font-size: 35px;
+      transition: 0.5s;
+    }
+    .buttons svg:hover {
+      color: white;
+      background-color: #4169e1;
+      font-size: 45px;
+    }
+  }
 }
