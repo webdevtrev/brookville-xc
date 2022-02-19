@@ -54,8 +54,8 @@ export default function OnePost() {
       <div>
         <BlockContent
           blocks={postData.body}
-          projectId={sanityClient.clientConfig.projectId}
-          dataset={sanityClient.clientConfig.dataset}
+          projectId={sanityClient.config().projectId}
+          dataset={sanityClient.config().dataset}
         />
       </div>
     </div>
