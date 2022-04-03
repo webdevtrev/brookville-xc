@@ -54,6 +54,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "npm-license-crawler": "^0.2.1"
   }
 }
